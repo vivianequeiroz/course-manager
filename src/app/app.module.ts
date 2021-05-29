@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CouseListComponent } from './courses/course-list.component';
+import { StarComponent } from './star/star.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CouseListComponent,
+    StarComponent
   ],
   imports: [
     BrowserModule

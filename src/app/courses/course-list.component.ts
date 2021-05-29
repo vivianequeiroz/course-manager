@@ -18,7 +18,7 @@ export class CouseListComponent implements OnInit {
         price: 225.99,
         code: 'XPS-8797',
         duration: 260,
-        rating: 8.4,
+        rating: 5,
         releaseDate: 'May 17, 2021'
       },
       {
@@ -28,7 +28,7 @@ export class CouseListComponent implements OnInit {
         price: 399.99,
         code: 'XPS-8798',
         duration: 320,
-        rating: 8.9,
+        rating: 4.5,
         releaseDate: 'May 28, 2021'
       },
       {
@@ -38,7 +38,7 @@ export class CouseListComponent implements OnInit {
         price: 399.99,
         code: 'XPS-8799',
         duration: 320,
-        rating: 8.5,
+        rating: 4.2,
         releaseDate: 'May 30, 2021'
       },
     ]
