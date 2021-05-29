@@ -13,18 +13,8 @@ export class CouseListComponent implements OnInit {
     this.courses = [
       {
         id: 1,
-        name: 'Angular básico',
-        imageUrl: '',
-        price: 125.99,
-        code: 'XPS-8796',
-        duration: 200,
-        rating: 7.9,
-        releaseDate: 'May 2, 2021'
-      },
-      {
-        id: 1,
-        name: 'Angular intermediário',
-        imageUrl: '',
+        name: 'Angular Forms',
+        imageUrl: '/assets/images/animations.png',
         price: 225.99,
         code: 'XPS-8797',
         duration: 260,
@@ -32,14 +22,24 @@ export class CouseListComponent implements OnInit {
         releaseDate: 'May 17, 2021'
       },
       {
-        id: 1,
-        name: 'Angular avançado',
-        imageUrl: '',
+        id: 2,
+        name: 'Angular HTTP',
+        imageUrl: '/assets/images/http.png',
         price: 399.99,
         code: 'XPS-8798',
         duration: 320,
         rating: 8.9,
         releaseDate: 'May 28, 2021'
+      },
+      {
+        id: 3,
+        name: 'Angular Router',
+        imageUrl: '/assets/images/router.png',
+        price: 399.99,
+        code: 'XPS-8799',
+        duration: 320,
+        rating: 8.5,
+        releaseDate: 'May 30, 2021'
       },
     ]
   }
