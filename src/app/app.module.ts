@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { CouseListComponent } from './courses/course-list.component';
 import { StarComponent } from './star/star.component';
 import { FormsModule } from '@angular/forms';
+import { ReplacePipe } from './pipe/replace.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CouseListComponent,
-    StarComponent
+    StarComponent,
+    ReplacePipe
   ],
   imports: [
     BrowserModule,
