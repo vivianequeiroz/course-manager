@@ -9,6 +9,7 @@ import { CourseListComponent } from './courses/course-list.component';
 import { StarComponent } from './star/star.component';
 import { ReplacePipe } from './pipe/replace.pipe';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { CourseInfoComponent } from './courses/course-info.component';
 
 @NgModule({
   declarations: [
@@ -17,20 +18,25 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     StarComponent,
     ReplacePipe,
     NavBarComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CourseInfoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot([
       {
+        path: 'courses',
+        component: CourseListComponent
+      },
+      {
+        path: 'courses/info:id',
+        component: CourseInfoComponent
+      },
+      {
         path: '',
         redirectTo: 'courses',
         pathMatch: 'full'
-      },
-      {
-        path: 'courses',
-        component: CourseListComponent
       },
       {
         path: '**', component: PageNotFoundComponent
