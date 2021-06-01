@@ -30,7 +30,7 @@ import { CourseInfoComponent } from './courses/course-info.component';
         component: CourseListComponent
       },
       {
-        path: 'courses/info:id',
+        path: 'course/info:id',
         component: CourseInfoComponent
       },
       {
@@ -38,9 +38,10 @@ import { CourseInfoComponent } from './courses/course-info.component';
         redirectTo: 'courses',
         pathMatch: 'full'
       },
-      {
-        path: '**', component: PageNotFoundComponent
-      }
+      // {
+      //   path: '**', 
+      //   component: PageNotFoundComponent
+      // }
     ])
   ],
   providers: [],

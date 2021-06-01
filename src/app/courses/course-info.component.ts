@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   templateUrl: './course-info.component.html'
 })
-export class CourseInfoComponent implements OnInit {3
+export class CourseInfoComponent implements OnInit {
   
   courseId: number;
 
@@ -13,7 +13,7 @@ export class CourseInfoComponent implements OnInit {3
   ) {}
 
   ngOnInit(): void {
-   this.courseId = this.activatedRoute.snapshot.params.get('id');
+   this.courseId = +this.activatedRoute.snapshot.paramMap.get('id');
+   console.log(this.courseId);
   }
-  
 }
