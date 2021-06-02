@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/httpClient';
+
 import { Course } from './course';
 
 @Injectable({
@@ -6,8 +8,14 @@ import { Course } from './course';
 })
 export class CourseService {
 
+  private courseUrl: string = 'http://localhost:3100/api/courses';
+
+  constructor(
+    private httpClient: HttpClient
+  ) {}
+
   retrieveAll(): Course[] {
-    return COURSES;
+    return this.httpClient.get<Course[]>(this.courseUrl);
   }
 
   retrieveById(id: number): Course {
