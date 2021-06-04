@@ -20,7 +20,7 @@ export class CourseInfoComponent implements OnInit {
    console.log(this.course);
   }
 
-  save():void{
+  save():void {
     this.courseService.save(this.course);
   }
 }
