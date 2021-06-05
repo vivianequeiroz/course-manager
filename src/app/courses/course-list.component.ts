@@ -27,7 +27,7 @@ export class CourseListComponent implements OnInit {
         this.filteredCourses = this._courses;
       },
       error:  err => 
-        console.log(err)
+        console.log('Error occurred:', err)
     });
   }
 
