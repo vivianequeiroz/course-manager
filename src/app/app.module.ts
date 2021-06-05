@@ -1,4 +1,3 @@
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -11,7 +10,6 @@ import { CoreModule } from './core/components/core.module';
 @NgModule({
   declarations: [
     AppComponent,
-    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,10 +22,6 @@ import { CoreModule } from './core/components/core.module';
         redirectTo: 'courses',
         pathMatch: 'full'
       },
-      {
-        path: '**', 
-        component: PageNotFoundComponent
-      }
     ])
   ],
   providers: [],
