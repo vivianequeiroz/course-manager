@@ -9,4 +9,6 @@ import { StarComponent } from './star.component';
     StarComponent,
   ]
 })
-export class StarModule {}
+export class StarModule {
+  
+}
