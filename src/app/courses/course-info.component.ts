@@ -20,6 +20,10 @@ export class CourseInfoComponent implements OnInit {
    console.log(this.course);
   }
 
+  retrieveAll(): void {
+    
+  }
+
   save():void {
     this.courseService.save(this.course);
   }
